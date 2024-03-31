@@ -7,8 +7,8 @@ The To-Do List project is a simple web application designed to help users organi
 ## Table of Contents
 
 - [Introduction](#introduction)
-- [HTML Description](#html-description)
-- [CSS Description](#css-description)
+- [HTML Page](#html-page)
+- [CSS Styles](#css-styles)
 - [JavaScript Functions](#javascript-functions)
 - [Assertion Functions](#assertion-functions)
 - [Conclusion](#conclusion)
@@ -17,7 +17,7 @@ The To-Do List project is a simple web application designed to help users organi
 
 The To-Do List project is a simple web application designed to allow users to create, manage, and delete tasks. The application utilizes HTML, CSS, and JavaScript technologies to provide a user-friendly and interactive interface.
 
-## HTML Description
+## HTML Page
 
 The HTML page serves as the skeleton of the application, defining the webpage's structure and incorporating elements necessary for styling and behavior. Here's an overview of the main components of the HTML page:
 
@@ -29,7 +29,7 @@ The HTML page serves as the skeleton of the application, defining the webpage's 
 
 - **Content Structure**: The content structure includes the To-Do List header, task input area, task list, and JavaScript scripts.
 
-## CSS Description
+## CSS Styles
 
 CSS styles are used to make the application visually appealing and user-friendly. Here's an overview of the applied CSS styles:
 
