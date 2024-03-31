@@ -103,7 +103,7 @@ function toggleDarkTheme() {
       localStorage.setItem("dark-theme", "true");
     } else {
       body.classList.remove("dark-theme");
-      localStorage.setItem("darkMode", "disabled");
+      localStorage.setItem("dark-theme", "disabled");
     }
   });
 }
