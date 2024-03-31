@@ -91,8 +91,10 @@ function toggleDarkTheme() {
   const body = document.body;
 
   const isDarkTheme = localStorage.getItem("dark-theme") === "true";
+  const colorScheme = document.querySelector('meta[name="color-scheme"]');
 
   if (isDarkTheme) {
+    colorScheme.content = "dark";
     body.classList.add("dark-theme");
     darkbtn.checked = true;
   }
@@ -101,9 +103,11 @@ function toggleDarkTheme() {
     if (darkbtn.checked) {
       body.classList.add("dark-theme");
       localStorage.setItem("dark-theme", "true");
+      colorScheme.content = "dark";
     } else {
       body.classList.remove("dark-theme");
       localStorage.setItem("dark-theme", "disabled");
+      colorScheme.content = "light";
     }
   });
 }

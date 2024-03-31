@@ -40,6 +40,7 @@ body {
 
 .container {
   max-width: 600px;
+  max-height: 70vh;
   width: 80vw;
   margin: 20px auto;
   padding: 20px;
@@ -84,6 +85,8 @@ button:hover {
 ul {
   list-style-type: none;
   padding: 0;
+  max-height: 50vh;
+  overflow-y: auto;
 }
 
 li {
