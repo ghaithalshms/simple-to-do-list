@@ -1,4 +1,9 @@
-# To-Do List
+## Choose your language
+
+- [English](#to-do-list---en)
+- [Français](#to-do-list---fr)
+
+# To-Do List - EN
 
 ## Description
 
@@ -11,6 +16,7 @@ The To-Do List project is a simple web application designed to help users organi
 - [CSS Styles](#css-styles)
 - [JavaScript Functions](#javascript-functions)
 - [Assertion Functions](#assertion-functions)
+- [Issues Encountered](#issues-encountered)
 - [Conclusion](#conclusion)
 
 ## Introduction
@@ -79,8 +85,116 @@ These functions are used for verifying the correctness of the application's func
 
 - **runAsserts()**: This function serves as a runner for the assertion functions. It invokes both `testAddTask()` and `testRemoveTask()` functions and logs a message indicating the completion of tests. These tests are automatically executed when the window loads.
 
+## Issues Encountered
+
+During the development of the to-do list application, several issues were encountered, including:
+
+- **Local Storage Management**: Managing local storage to save tasks was a challenge, especially to ensure proper synchronization between the displayed task list and the stored data. This was resolved by using appropriate methods for reading and writing to local storage, as well as ensuring that update operations were performed atomically.
+
+- **Task State Management**: Another challenge was to properly maintain the state of tasks (completed or not completed) when interacting with the user interface. This required precise handling of click events and updating the interface accordingly. The solution was to adopt an approach based on CSS classes and data attributes to represent the task state effectively.
+
+- **Browser Compatibility**: Ensuring compatibility of the application with different browsers was also a challenge due to differences in support for certain JavaScript features and CSS rendering. An iterative debugging approach was adopted to identify and resolve browser-specific issues, using development tools and cross-browser testing.
+
 ## Conclusion
 
 The To-Do List project is a simple yet effective web application for task management, built using HTML, CSS, and JavaScript technologies. With its user-friendly interface and essential functionalities like adding, deleting, and marking tasks as completed, it provides a convenient way for users to organize their tasks.
 
 The project was developed over approximately 7-8 hours, including design, implementation, and testing phases. During development, attention was paid to both functionality and aesthetics to ensure a seamless user experience. The application leverages local storage for data persistence, allowing users to access their tasks even after refreshing the page or closing the browser.
+
+# To-Do List - FR
+
+## Description
+
+Le projet de la liste de tâches est une application web simple conçue pour aider les utilisateurs à organiser leurs tâches. Les utilisateurs peuvent ajouter, supprimer et marquer des tâches comme terminées. L'application offre une interface conviviale et utilise les technologies HTML, CSS et JavaScript.
+
+## Table des matières
+
+- [Introduction](#introduction)
+- [Page HTML](#page-html)
+- [Styles CSS](#styles-css)
+- [Fonctions JavaScript](#fonctions-javascript)
+- [Fonctions d'Assertion](#fonctions-dassertion)
+- [Problèmes Rencontrés](#problèmes-rencontrés)
+- [Conclusion](#conclusion)
+
+## Introduction
+
+Le projet de la liste de tâches est une application web simple conçue pour permettre aux utilisateurs de créer, gérer et supprimer des tâches. L'application utilise les technologies HTML, CSS et JavaScript pour fournir une interface conviviale et interactive.
+
+## Page HTML
+
+La page HTML sert de squelette de l'application, définissant la structure de la page web et incorporant des éléments nécessaires pour le style et le comportement. Voici un aperçu des principaux composants de la page HTML :
+
+- **Doctype et Balise HTML** : La déclaration du type de document (`<!DOCTYPE html>`) spécifie la version d'HTML utilisée. La balise `<html>` englobe tout le contenu de la page.
+
+- **Balise Head** : La balise `<head>` contient les métadonnées de la page, telles que le titre, les liens vers les feuilles de style CSS et les scripts JavaScript. Elle spécifie également l'ensemble de caractères et le schéma de couleur préféré.
+
+- **Balise Body** : La balise `<body>` contient le contenu principal de la page, y compris l'en-tête, la zone de saisie des tâches, la liste des tâches et les scripts JavaScript.
+
+- **Structure du Contenu** : La structure du contenu comprend l'en-tête de la liste de tâches, la zone de saisie des tâches, la liste des tâches et les scripts JavaScript.
+
+## Styles CSS
+
+Les styles CSS sont utilisés pour rendre l'application visuellement attrayante et conviviale. Voici un aperçu des styles CSS appliqués :
+
+- **Variables CSS** : Les variables CSS sont définies pour les couleurs de fond, les couleurs de texte et d'autres propriétés réutilisables. Cela permet une gestion efficace des styles et facilite les modifications futures.
+
+- **Styles des Conteneurs** : Les styles des conteneurs définissent la mise en page générale de l'application, y compris la largeur, la marge, le rembourrage et la bordure.
+
+- **Styles de l'En-tête** : Les styles de l'en-tête définissent l'apparence de l'en-tête de la liste de tâches, y compris l'alignement, les marges et les dimensions des éléments.
+
+- **Styles des Entrées** : Les styles des entrées définissent l'apparence de la zone de saisie des tâches, y compris la largeur, la marge et la police de caractères.
+
+- **Styles des Boutons** : Les styles des boutons définissent l'apparence des boutons de l'application, y compris la couleur de fond, la couleur du texte et les transitions.
+
+- **Styles de la Liste** : Les styles de la liste définissent l'apparence des éléments de liste, y compris la couleur de fond, la marge et les transitions.
+
+- **Styles des Tâches Terminées** : Les styles des tâches terminées définissent l'apparence des tâches marquées comme terminées, y compris le style de texte barré et la couleur du texte.
+
+## Fonctions JavaScript
+
+Les fonctions JavaScript dans l'application gèrent la logique et le comportement dynamique de l'interface utilisateur. Voici une description détaillée des principales fonctions JavaScript :
+
+- **addTask()** : Cette fonction est appelée lorsqu'un utilisateur clique sur le bouton "Ajouter une tâche" ou appuie sur Entrée après avoir saisi une tâche. Elle récupère la valeur saisie par l'utilisateur, crée un nouvel élément de liste de tâches, l'ajoute à la liste et enregistre les tâches dans le stockage local.
+
+- **createTaskElement(taskText)** : Cette fonction crée un nouvel élément de liste de tâches avec le texte de la tâche spécifié. Elle crée également un bouton de suppression pour permettre à l'utilisateur de supprimer la tâche.
+
+- **handleOnKeyDown(event)** : Cette fonction est déclenchée lorsqu'un utilisateur appuie sur une touche dans la zone de saisie des tâches. Si la touche est Entrée, elle appelle la fonction addTask() pour ajouter la tâche.
+
+- **createRemoveButton()** : Cette fonction crée un bouton de suppression pour une tâche donnée. Ce bouton permet à l'utilisateur de supprimer une tâche de la liste.
+
+- **toggleTask()** : Cette fonction est appelée lorsqu'un utilisateur clique sur une tâche pour basculer son statut de réalisation. Elle ajoute ou supprime une classe CSS pour indiquer visuellement l'état de la tâche et enregistre les tâches dans le stockage local.
+
+- **removeTask(event)** : Cette fonction est appelée lorsqu'un utilisateur clique sur le bouton de suppression pour une tâche. Elle supprime l'élément de liste de tâches correspondant de l'interface utilisateur et enregistre les tâches mises à jour dans le stockage local.
+
+- **saveTasksToLocalStorage()** : Cette fonction récupère toutes les tâches de la liste actuelle et les enregistre dans le stockage local sous forme d'objet JSON.
+
+- **loadTasksFromLocalStorage()** : Cette fonction récupère les tâches enregistrées dans le stockage local. Si des tâches existent, elle crée des éléments de liste de tâches et les affiche dans l'interface utilisateur.
+
+- **toggleDarkTheme()** : Cette fonction gère le basculement entre les thèmes clair et sombre de l'application en fonction de l'état de la case à cocher correspondante. Elle met à jour les styles CSS appropriés et enregistre les préférences de thème dans le stockage local.
+
+## Fonctions d'Assertion
+
+Ces fonctions sont utilisées pour vérifier la correction de la fonctionnalité de l'application. Elles utilisent la méthode `console.assert()` de JavaScript pour affirmer des conditions spécifiques et consigner des messages d'erreur si les conditions ne sont pas remplies.
+
+- **testAddTask()** : Cette fonction vérifie le comportement de l'ajout d'une tâche à la liste de tâches. Elle simule l'ajout d'une tâche, puis vérifie si le nombre d'éléments de tâche dans la liste a augmenté d'un après l'ajout.
+
+- **testRemoveTask()** : Cette fonction vérifie le comportement de la suppression d'une tâche de la liste de tâches. Elle simule la suppression d'une tâche, puis vérifie si le nombre d'éléments de tâche dans la liste a diminué de un après la suppression.
+
+- **runAsserts()** : Cette fonction sert d'exécuteur pour les fonctions d'assertion. Elle invoque à la fois les fonctions `testAddTask()` et `testRemoveTask()` et consigne un message indiquant la fin des tests. Ces tests sont automatiquement exécutés lorsque la fenêtre se charge.
+
+## Problèmes Rencontrés
+
+Au cours du développement de l'application de liste de tâches, plusieurs problèmes ont été rencontrés, notamment :
+
+- **Gestion du Stockage Local** : La gestion du stockage local pour sauvegarder les tâches a été un défi, en particulier pour garantir la synchronisation correcte entre la liste de tâches affichée et les données stockées. Cela a été résolu en utilisant des méthodes appropriées pour la lecture et l'écriture dans le stockage local, ainsi qu'en veillant à ce que les opérations de mise à jour soient effectuées de manière atomique.
+
+- **Gestion de l'État des Tâches** : Un autre défi était de maintenir correctement l'état des tâches (terminées ou non terminées) lors de l'interaction de l'utilisateur avec l'interface. Cela a nécessité une gestion précise des événements de clic et des mises à jour de l'interface en conséquence. La solution a été d'adopter une approche basée sur des classes CSS et des attributs de données pour représenter l'état des tâches de manière efficace.
+
+- **Compatibilité des Navigateurs** : Assurer la compatibilité de l'application avec différents navigateurs a également été un défi, en raison des différences de support pour certaines fonctionnalités JavaScript et de rendu CSS. Une approche de débogage itérative a été adoptée pour identifier et résoudre les problèmes spécifiques à chaque navigateur, en utilisant des outils de développement et des tests croisés.
+
+## Conclusion
+
+Le projet de la liste de tâches est une application web simple mais efficace pour la gestion des tâches, construite en utilisant les technologies HTML, CSS et JavaScript. Avec son interface conviviale et ses fonctionnalités essentielles telles que l'ajout, la suppression et le marquage des tâches comme terminées, elle offre un moyen pratique aux utilisateurs d'organiser leurs tâches.
+
+Le projet a été développé en environ 7 à 8 heures, comprenant les phases de conception, d'implémentation et de test. Pendant le développement, une attention particulière a été portée à la fois à la fonctionnalité et à l'esthétique pour garantir une expérience utilisateur fluide. L'application utilise le stockage local pour la persistance des données, permettant aux utilisateurs d'accéder à leurs tâches même après le rafraîchissement de la page ou la fermeture du navigateur.
