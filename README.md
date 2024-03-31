@@ -93,8 +93,6 @@ During the development of the to-do list application, several issues were encoun
 
 - **Task State Management**: Another challenge was to properly maintain the state of tasks (completed or not completed) when interacting with the user interface. This required precise handling of click events and updating the interface accordingly. The solution was to adopt an approach based on CSS classes and data attributes to represent the task state effectively.
 
-- **Browser Compatibility**: Ensuring compatibility of the application with different browsers was also a challenge due to differences in support for certain JavaScript features and CSS rendering. An iterative debugging approach was adopted to identify and resolve browser-specific issues, using development tools and cross-browser testing.
-
 ## Conclusion
 
 The To-Do List project is a simple yet effective web application for task management, built using HTML, CSS, and JavaScript technologies. With its user-friendly interface and essential functionalities like adding, deleting, and marking tasks as completed, it provides a convenient way for users to organize their tasks.
@@ -190,8 +188,6 @@ Au cours du développement de l'application de liste de tâches, plusieurs probl
 - **Gestion du Stockage Local** : La gestion du stockage local pour sauvegarder les tâches a été un défi, en particulier pour garantir la synchronisation correcte entre la liste de tâches affichée et les données stockées. Cela a été résolu en utilisant des méthodes appropriées pour la lecture et l'écriture dans le stockage local, ainsi qu'en veillant à ce que les opérations de mise à jour soient effectuées de manière atomique.
 
 - **Gestion de l'État des Tâches** : Un autre défi était de maintenir correctement l'état des tâches (terminées ou non terminées) lors de l'interaction de l'utilisateur avec l'interface. Cela a nécessité une gestion précise des événements de clic et des mises à jour de l'interface en conséquence. La solution a été d'adopter une approche basée sur des classes CSS et des attributs de données pour représenter l'état des tâches de manière efficace.
-
-- **Compatibilité des Navigateurs** : Assurer la compatibilité de l'application avec différents navigateurs a également été un défi, en raison des différences de support pour certaines fonctionnalités JavaScript et de rendu CSS. Une approche de débogage itérative a été adoptée pour identifier et résoudre les problèmes spécifiques à chaque navigateur, en utilisant des outils de développement et des tests croisés.
 
 ## Conclusion
 
