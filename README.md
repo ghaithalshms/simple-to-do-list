@@ -46,7 +46,7 @@ CSS styles are used to make the application visually appealing and user-friendly
 
 - **Completed Task Styles**: Completed task styles define the appearance of tasks marked as completed, including strikethrough text style and text color.
 
-## Detailed JavaScript Function Descriptions
+## JavaScript Functions
 
 JavaScript functions in the application manage the logic and dynamic behavior of the user interface. Here's a detailed description of the main JavaScript functions:
 
