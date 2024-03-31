@@ -116,3 +116,40 @@ window.addEventListener("load", () => {
   loadTasksFromLocalStorage();
   toggleDarkTheme();
 });
+
+// ASSERT FUNCTIONS FOR VERIFICATION
+function testAddTask() {
+  var initialTaskCount = document.querySelectorAll(".task-item").length;
+  var taskInput = document.getElementById("taskInput");
+  taskInput.value = "Test Task";
+  addTask();
+  var finalTaskCount = document.querySelectorAll(".task-item").length;
+
+  console.assert(
+    finalTaskCount === initialTaskCount + 1,
+    "Task was not added successfully"
+  );
+}
+
+function testRemoveTask() {
+  var taskList = document.getElementById("taskList");
+  var initialTaskCount = taskList.children.length;
+  var removeButton = taskList.children[0].querySelector(".remove-button");
+  removeButton.click();
+  var finalTaskCount = taskList.children.length;
+
+  console.assert(
+    finalTaskCount === initialTaskCount - 1,
+    "Task was not removed successfully"
+  );
+}
+
+function runAsserts() {
+  console.log("Running tests...");
+  testAddTask();
+  testRemoveTask();
+  console.log("Tests completed.");
+}
+
+// Run tests on window load
+window.addEventListener("load", runAsserts);
