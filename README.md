@@ -1,5 +1,17 @@
 # To-Do List
 
+## Description
+
+The To-Do List project is a simple web application designed to help users organize their tasks. Users can add, delete, and mark tasks as completed. The application offers a user-friendly interface and leverages HTML, CSS, and JavaScript technologies.
+
+## Table of Contents
+
+- [Introduction](#introduction)
+- [HTML Description](#html-description)
+- [CSS Description](#css-description)
+- [JavaScript Functions](#javascript-functions)
+- [Conclusion](#conclusion)
+
 ## Introduction
 
 The To-Do List project is a simple web application designed to allow users to create, manage, and delete tasks. The application utilizes HTML, CSS, and JavaScript technologies to provide a user-friendly and interactive interface.
