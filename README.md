@@ -10,6 +10,7 @@ The To-Do List project is a simple web application designed to help users organi
 - [HTML Description](#html-description)
 - [CSS Description](#css-description)
 - [JavaScript Functions](#javascript-functions)
+- [Assertion Functions](#assertion-functions)
 - [Conclusion](#conclusion)
 
 ## Introduction
@@ -68,6 +69,18 @@ JavaScript functions in the application manage the logic and dynamic behavior of
 
 - **toggleDarkTheme()**: This function manages toggling between light and dark themes of the application based on the state of the corresponding checkbox. It updates the appropriate CSS styles and saves theme preferences to local storage.
 
+## Assertion Functions
+
+These functions are used for verifying the correctness of the application's functionality. They utilize JavaScript's `console.assert()` method to assert specific conditions and log error messages if the conditions are not met.
+
+- **testAddTask()**: This function verifies the behavior of adding a task to the task list. It simulates adding a task and then checks whether the number of task items in the list has increased by one after the addition.
+
+- **testRemoveTask()**: This function verifies the behavior of removing a task from the task list. It simulates removing a task and then checks whether the number of task items in the list has decreased by one after the removal.
+
+- **runAsserts()**: This function serves as a runner for the assertion functions. It invokes both `testAddTask()` and `testRemoveTask()` functions and logs a message indicating the completion of tests. These tests are automatically executed when the window loads.
+
 ## Conclusion
 
-The To-Do List project demonstrates the practical use of frontend web technologies to create a functional and interactive application. By combining HTML for structure, CSS for style, and JavaScript for behavior, the application provides a seamless user experience for managing daily tasks.
+The To-Do List project is a simple yet effective web application for task management, built using HTML, CSS, and JavaScript technologies. With its user-friendly interface and essential functionalities like adding, deleting, and marking tasks as completed, it provides a convenient way for users to organize their tasks.
+
+The project was developed over approximately 7-8 hours, including design, implementation, and testing phases. During development, attention was paid to both functionality and aesthetics to ensure a seamless user experience. The application leverages local storage for data persistence, allowing users to access their tasks even after refreshing the page or closing the browser.
